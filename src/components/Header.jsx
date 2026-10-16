@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CheckSquare, Bell, ShieldCheck, User } from 'lucide-react';
+import { CheckSquare } from 'lucide-react';
 
 export default function Header() {
   const [currentDate, setCurrentDate] = useState('');
@@ -40,22 +40,13 @@ export default function Header() {
             <span>{currentDate || 'Today'}</span>
           </div>
 
-          {/* Sync Status Badge */}
-          <div
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-blue-800/60 border border-blue-700/40 text-[11px] text-blue-100 font-medium"
-            title="Local browser storage active & in sync"
-          >
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="hidden md:inline">Storage Synced</span>
-          </div>
-
           {/* User Avatar */}
           <div className="flex items-center gap-2 pl-2 border-l border-blue-800/80">
             <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-400 to-orange-500 flex items-center justify-center text-white text-xs font-bold shadow-sm ring-2 ring-white/20 cursor-pointer">
-              JD
+              DM
             </div>
             <div className="hidden lg:block text-left text-xs leading-tight">
-              <span className="block font-semibold text-white">John Doe</span>
+              <span className="block font-semibold text-white">Daksh Mehta</span>
               <span className="block text-[10px] text-blue-200/70">Personal Space</span>
             </div>
           </div>
